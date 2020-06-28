@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "lib": ["ES2018"],
         "plugins": [
             {
                 "name": "typescript-deno-plugin",
