@@ -1,3 +1,17 @@
+export interface GitPullRequestChange {
+    id: string;
+    eventType: string;
+    message: GitPullRequestChangeMessage;
+    detailedMessage: GitPullRequestChangeMessage;
+    resource: GitPullRequest;
+}
+
+export interface GitPullRequestChangeMessage {
+    text: string;
+    html: string;
+    markdown: string;
+}
+
 /**
  * Represents all the data associated with a pull request.
  */
