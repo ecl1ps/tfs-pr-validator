@@ -5,14 +5,16 @@
         "cmd": "deno run src/index.ts",
         "desc": "run app",
         "allow": [
-        "net"
+            "net",
+            "env"
         ]
     },
     "debug": {
         "cmd": "deno run src/index.ts",
         "desc": "debug app",
         "allow": [
-          "net"
+            "net",
+            "env"
         ],
         "inspect": "127.0.0.1:9229"      
     },
