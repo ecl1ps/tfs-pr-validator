@@ -1,0 +1,29 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "scripts": {
+    "start": {
+        "cmd": "deno run src/index.ts",
+        "desc": "run app",
+        "allow": [
+        "net"
+        ]
+    },
+    "debug": {
+        "cmd": "deno run src/index.ts",
+        "desc": "debug app",
+        "allow": [
+          "net"
+        ],
+        "inspect": "127.0.0.1:9229"      
+    },
+    "test": {
+        "cmd": "deno test",
+        "desc": "run unit tests"
+    },
+    "bundle": {
+        "cmd": "deno bundle src/index.ts dist/app.bundle.js",
+        "desc": "creates bundled app"
+    }
+  }
+}
+
