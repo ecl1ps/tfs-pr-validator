@@ -1,5 +1,5 @@
 {
-  "$schema": "https://deno.land/x/denon/schema.json",
+  "$schema": "https://deno.land/x/denon@2.4.0/schema.json",
   "scripts": {
     "start": {
         "cmd": "deno run src/index.ts",
