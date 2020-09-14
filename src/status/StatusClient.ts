@@ -13,7 +13,7 @@ export class StatusClient {
 
     private _createAuthenticationHeader() {
         return {
-            "Authenticate": `Basic ${btoa(`:${this.patToken}`)}`,
+            "Authorization": `Basic ${btoa(`:${this.patToken}`)}`,
         };
     }
 
@@ -28,6 +28,6 @@ export class StatusClient {
         });
 
         if (!response.ok)
-            throw new Error(`Failed to send new PR status: ${response.status} ${response.statusText}`);
+            console.error(`Failed to send new PR status: ${response.status} ${response.statusText}`);
     }
 }
